@@ -99,14 +99,11 @@ class App extends Component {
     }
 
     onEditContact = (editedContact) => {
-        console.log("editdContact 1111", editedContact.Id)
-        console.log("editdContact 3333", this.state.List[0].Id)
-        for (let i = 0; i < this.state.List.length; i++) {
-            if (this.state.List[i].Id == editedContact.Id) {
-                this.state.List[i] = editedContact
-           }
-            
+        const wert = [...this.state.List]
+        for (let i = 0; i < wert.length; i++) {
+            if (wert[i].Id == editedContact.Id) wert[i] = editedContact;
         }
+        this.setState({List:wert})
     }
 
     render() {
