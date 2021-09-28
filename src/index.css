@@ -296,13 +296,13 @@ input {
   float: right;
   margin-right: 76px;
 }
-.contactIcons :first-child{
-  color: #f2a654;
-  cursor: pointer;
-}
 .contactIcons :last-child{
   color: #ff69b4;
   margin-left: 10px;
+  cursor: pointer;
+}
+.contactIcons :first-child{
+  color: #f2a654;
   cursor: pointer;
 }
 .emptyList{
@@ -310,3 +310,8 @@ input {
   font-size: 24px;
   font-weight: bolder;
 }
+
+
+
+/* my style */
+

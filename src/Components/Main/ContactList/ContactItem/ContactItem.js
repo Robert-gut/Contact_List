@@ -35,8 +35,8 @@ const ContactItem = ({ Name, Avatar, Phone, Email, Status, Gender, onStateChange
                 {Email}
             </div>
             <div className="contactIcons">
-                <Link to="/edit-contact">
-                    <i className="far fa-edit fa-2x" onClick={onGetCurrentIndex} ></i>
+                <Link  to="/edit-contact">
+                    <i className="color_yellow far fa-edit fa-2x " onClick={onGetCurrentIndex} ></i>
                 </Link>
                 <i className="far fa-trash-alt fa-2x" onClick={onDelete}></i>
             </div>
